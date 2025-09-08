@@ -1,0 +1,70 @@
+# Production AI Resume Screening System - Dependencies
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+jinja2==3.1.2
+aiofiles==23.2.1
+
+# Azure Services
+azure-search-documents==11.4.0
+azure-core==1.29.5
+openai==1.3.8
+
+# Document Processing
+PyPDF2==3.0.1
+python-docx==1.1.0
+PyMuPDF==1.23.8
+unstructured==0.11.2
+pypdf==3.17.1
+
+# LangChain Components
+langchain==0.0.350
+langchain-community==0.0.3
+langchain-openai==0.0.2
+langchain-text-splitters==0.0.1
+tiktoken==0.5.2
+
+# Data Processing
+pandas==2.1.4
+numpy==1.25.2
+python-dateutil==2.8.2
+
+# Configuration & Environment
+pydantic==2.5.1
+python-dotenv==1.0.0
+
+# Text Processing & Similarity
+python-Levenshtein==0.23.0
+difflib2==0.1.2
+
+# HTTP & Requests
+requests==2.31.0
+httpx==0.25.2
+
+# Async Support
+asyncio-mqtt==0.16.1
+
+# Logging & Monitoring
+structlog==23.2.0
+
+# Security & Validation
+email-validator==2.1.0
+cryptography==41.0.8
+
+# Testing (Development)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Performance & Optimization
+cachetools==5.3.2
+memory-profiler==0.61.0
+
+# Development Tools
+black==23.11.0
+flake8==6.1.0
+isort==5.12.0
+
+# Production Server
+gunicorn==21.2.0

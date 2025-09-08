@@ -1,0 +1,104 @@
+# ==================== AZURE OPENAI CONFIGURATION ====================
+# Azure OpenAI API Key
+API_KEY=
+
+# Azure OpenAI Endpoint
+ENDPOINT=
+
+# Azure OpenAI API Version
+API_VERSION="2024-12-01-preview"
+
+# Azure OpenAI Model Deployments
+DEPLOYMENT="gpt-4o-mini"                    # Main model for complex reasoning
+DEPLOYMENT_mini="gpt-4o-mini"               # Lightweight model for simple tasks
+DEPLOYMENT_EMB="text-embedding-3-small"     # Embeddings model
+AZURE_EMBEDDINGS_DEPLOYMENT_NAME="text-embedding-3-small"
+
+# Azure OpenAI for Vector Manager
+AZURE_OPENAI_ENDPOINT=
+AZURE_OPENAI_KEY=
+AZURE_API_VERSION="2024-12-01-preview"
+
+# ==================== AZURE AI SEARCH CONFIGURATION ====================
+# Azure AI Search Service Endpoint
+AZURE_SEARCH_ENDPOINT=
+
+# Azure AI Search Admin Key
+AZURE_SEARCH_KEY=
+
+# Azure AI Search Index Name (optional - will be auto-generated if not provided)
+AZURE_SEARCH_INDEX_NAME=
+
+# ==================== AZURE STORAGE CONFIGURATION ====================
+# Azure Storage Connection String for Caching
+CONNECTION_STRING=
+
+# ==================== APPLICATION CONFIGURATION ====================
+# Environment Mode (development, staging, production)
+ENVIRONMENT=development
+
+# Server Configuration
+SERVER_HOST=0.0.0.0
+SERVER_PORT=8000
+SERVER_WORKERS=1
+SERVER_RELOAD=true
+DEBUG=true
+
+# CORS Origins (comma-separated)
+CORS_ORIGINS=http://localhost:3000,http://localhost:8000,http://127.0.0.1:8000
+
+# ==================== SECURITY CONFIGURATION ====================
+# File Upload Limits
+MAX_FILE_SIZE_MB=50
+MAX_FILES_PER_UPLOAD=20
+
+# Session Management
+SESSION_TIMEOUT_MINUTES=60
+MAX_CONCURRENT_SESSIONS=10
+
+# Rate Limiting
+ENABLE_RATE_LIMITING=true
+MAX_REQUESTS_PER_MINUTE=30
+
+# ==================== PROCESSING CONFIGURATION ====================
+# Document Processing
+MAX_CHUNKS_PER_DOCUMENT=1500
+CHUNK_SIZE=1200
+CHUNK_OVERLAP=300
+MAX_PROCESSING_TIME_SECONDS=300
+MAX_CONCURRENT_PROCESSING=5
+
+# Retry Configuration
+RETRY_ATTEMPTS=3
+RETRY_DELAY_SECONDS=2
+
+# Embedding Configuration
+EMBEDDING_BATCH_SIZE=16
+
+# ==================== SCORING CONFIGURATION ====================
+# Dynamic Scoring Weights (can be overridden via API)
+SKILLS_MAX_SCORE=50.0
+EXPERIENCE_MAX_SCORE=10.0
+RELEVANT_EXP_MAX_SCORE=20.0
+PROJECTS_MAX_SCORE=20.0
+
+# Experience Thresholds
+LOW_EXPERIENCE_BUFFER=1
+HIGH_EXPERIENCE_BUFFER=2
+
+# ==================== LOGGING CONFIGURATION ====================
+# Logging Level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+LOG_LEVEL=INFO
+
+# Log File Configuration
+ENABLE_FILE_LOGGING=true
+LOG_FILE_PATH=logs/application.log
+LOG_MAX_FILE_SIZE_MB=10
+LOG_BACKUP_COUNT=5
+
+# ==================== CACHE CONFIGURATION ====================
+# Cache Settings
+ENABLE_EVALUATION_CACHE=true
+ENABLE_JD_CACHE=true
+CACHE_TTL_HOURS=24
+MAX_CACHE_ENTRIES=1000
